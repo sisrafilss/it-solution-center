@@ -3,6 +3,7 @@ import './Card.css'
 
 const Card = (props) => {
     const {name, role, age, image, salary, experience} = props.itPerson;
+
     return (
         <div className="col cart-text-color" >
 
@@ -15,7 +16,12 @@ const Card = (props) => {
                     <p className="card-text mb-1"> <span className="font-weight-500">Exprerience: </span> {experience} </p>
                     <p className="card-text mb-1"> <span className="font-weight-500">Age: </span> {age} </p>
                     <p className="card-text"> <span className="font-weight-500">Salary: </span> {salary} </p>
-                    <button className="btn btn-secondary btn-regular"><i className="fas fa-cart-plus"></i> Add to Cart</button>
+
+                    <button 
+                    onClick={() => props.handleAddPersonToCart(props.itPerson)}
+                    
+                    className="btn btn-secondary btn-regular"><i className="fas fa-cart-plus"></i> Add to Cart</button>
+
                 </div>
             </div>
         </div>
