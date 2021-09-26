@@ -1,0 +1,25 @@
+.cart-bg {
+    background-color: #6D8299;
+}
+
+.cart-header {
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.secondary-text {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.table-image {
+    width: 100px;
+}
+table tr {
+    line-height: 40px;
+    border-radius: 20px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.698);
+}
+table tr td{
+    padding-left: 10px !important;
+}
