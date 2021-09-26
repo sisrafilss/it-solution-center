@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CartEntry = (props) => {
-    const {name, salary} = props.person;
+    const { name, salary } = props.person;
     return (
         <tbody>
             <tr className="bg-dark text-light">
@@ -10,17 +10,10 @@ const CartEntry = (props) => {
             </tr>
 
             {/* <tr className="bg-dark text-light">
-            <td>John Doe</td>
-            <td>74000</td>
-        </tr>
-        <tr className="bg-dark text-light">
-            <td>John Doe</td>
-            <td>74000</td>
-        </tr>
-        <tr className="bg-dark text-light">
-            <td>John Doe</td>
-            <td>74000</td>
-        </tr> */}
+                    <td>John Doe</td>
+                    <td>74000</td>
+                </tr>
+            */}
         </tbody>
     );
 };

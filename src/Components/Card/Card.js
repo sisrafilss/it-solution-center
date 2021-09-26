@@ -2,6 +2,7 @@ import React from 'react';
 import './Card.css'
 
 const Card = (props) => {
+    // Assigning necessary variable by destructuring
     const {name, role, age, image, salary, experience} = props.itPerson;
 
     return (
@@ -10,7 +11,6 @@ const Card = (props) => {
             <div className="card h-100" style={{ backgroundColor: "#316B83" }}>
                 <img src={image} className="card-img-top" alt="..." />
                 <div className="card-body d-flex flex-column align-items-center">
-                    {/* <h5 className="card-title"></h5> */}
                     <p className="card-text mb-1"> <span className="font-weight-500">Name: </span> {name} </p>
                     <p className="card-text mb-1"> <span className="font-weight-500">Role: </span> {role} </p>
                     <p className="card-text mb-1"> <span className="font-weight-500">Exprerience: </span> {experience} </p>
@@ -19,7 +19,6 @@ const Card = (props) => {
 
                     <button 
                     onClick={() => props.handleAddPersonToCart(props.itPerson)}
-                    
                     className="btn btn-secondary btn-regular"><i className="fas fa-cart-plus"></i> Add to Cart</button>
 
                 </div>

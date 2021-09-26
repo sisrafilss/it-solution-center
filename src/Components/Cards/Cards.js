@@ -14,7 +14,6 @@ const Cards = (props) => {
                         handleAddPersonToCart={props.handleAddPersonToCart}
                         key={itPerson.id}
                         itPerson={itPerson}
-
                         ></Card> )
                 }
                 
